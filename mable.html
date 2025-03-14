@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link 
+    rel="preconnect" 
+    href="https://fonts.googleapis.com">
+	<link 
+    rel="preconnect" 
+    href="https://fonts.gstatic.com" crossorigin>
+	<link 
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" 
+    rel="stylesheet">
+	<meta charset="UTF-8">
+    <title>Страница о Мейбл из Гравити Фолз</title>
+    <style>
+    html {
+      background-image: url('https://i.pinimg.com/originals/b7/0d/81/b70d814cce9d92b6e40a93c3debe8747.jpg'); 
+      background-size: cover; 
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+	}
+    body {
+      font-family: Comfortaa;
+      color: #291f23;
+    }
+    header, section, article{
+      background-color: rgba(247, 247, 247, 0.91);
+      margin: 20px;
+      padding: 20px;
+      color: #291f23;
+      border-radius: 5px;
+    }
+    section:hover {
+      background-color: #f7f7f7;
+    }
+    article:hover {
+      background-color: #f7f7f7;
+    }
+    footer {
+      margin: 20px;
+      padding: 20px;
+      color: #594d52;
+      background-color: rgba(247, 247, 247, 0.91);
+      border-radius: 5px;
+    }
+    footer:hover {
+      background-color: #f7f7f7;
+    }
+    header {
+      background-color: #cc7283;
+      color: #fff;
+    }
+    header:hover {
+      transform: scale(1.1);
+    }
+    h1 {
+      font-family: Comfortaa;
+      margin: 0;
+    }
+    h2 {
+      font-family: Comfortaa;
+      margin: 0;
+    }
+    h3 {
+      font-family: Comfortaa;
+      margin: 0;
+    }
+    img {
+      float: right;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px 0;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+    ul {
+      list-style: circle;
+    }
+    button {
+      font-family: Comfortaa;
+      background-color: #cc7283;
+      color: #fff;
+      margin: 20px;
+      padding: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    button:hover {
+      background-color: #291f23;
+    }
+    #hidden-text {
+      background-color: #f7f7f7;
+      border-radius: 5px;
+      display: none;
+      margin: 20px;
+      padding: 20px;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      header, section, article, footer {
+        font-size: 30px;
+	border-radius: 15px;
+        padding: 10px;
+        margin: 5px;
+      }
+      button {
+        font-size: 20px;
+        width: 100%;
+        border-radius: 15px;
+        height: 50px;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      body {
+        max-width: 1024px;
+        margin: 0 auto;
+      }
+      header, section, article, footer {
+        margin: 20px;
+      }
+    }
+    </style>
+</head>
+<body>
+    <header>
+    	<h1>Мейбл Пайнс</h1>
+  	</header>
+    <figure>
+   	<img src='https://vignette.wikia.nocookie.net/loveinterest/images/4/4b/Mabel_Pines.png' alt="The Pulpit Rock" width="304" height="228">
+	</figure>
+    <section>
+    	<h2>Кто это?</h2>
+        <p>Мэйбл Пайнс (англ. Mabel Pines) — одна из главных героев мультсериала Гравити Фолз. Персонаж создан Алексом Хиршем и озвучен Кристен Шаал. Прототипом образа Мэйбл послужила сестра-близнец Алекса Хирша, Ариэль Хирш.</p>
+	</section>
+    <article>
+    	<h3>О персонаже</h3>
+        <ul>
+   		<li>12-летняя девочка, сестра-близнец Диппера</li> 
+        	<li> Добрая и жизнерадостная</li>
+        	<li>Любит своего поросёнка Пухлю</li> 
+        	<li>Носит различные свитера</li> 
+        	<li>В конце сериала исполнилось 13 лет</li>
+        </ul>
+	</article>
+	<button onclick="toggleText()">Узнать тайну!</button>
+	<div id="hidden-text">
+      		<p>Предполагается, что Gravity Falls находится в параллельной вселенной к шоу Adult Swim TV Rick and Morty. В эпизоде Gravity Falls кофейная кружка, блокнот и ручка Стэна пролетают через портал, за которым он следит. В одном из эпизодов Rick and Morty те же три предмета видны падающими через портал на заднем плане.</p>
+    	</div>
+    	<script>
+    		function toggleText() {
+      			var text = document.getElementById('hidden-text');
+      			text.style.display = 'block';
+    		}
+  	</script>
+	
+    <footer>
+    	<p>«Гравити Фолз» (англ. Gravity Falls) — американский анимационный телевизионный сериал, созданный Алексом Хиршем и компанией Disney Television Animation</p>
+        <p> Источник: <a href="https://ru.wikipedia.org/wiki/%D0%9C%D1%8D%D0%B9%D0%B1%D0%BB_%D0%9F%D0%B0%D0%B9%D0%BD%D1%81" target="_blank">Mable Wiki</a>.</p>
+	</footer>
+</body>
+</html>
